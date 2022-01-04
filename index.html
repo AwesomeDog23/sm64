@@ -74,11 +74,6 @@
             console.log(text);
           };
         })(),
-        printErr: function(text) {
-          if (arguments.length > 1)
-            text = Array.prototype.slice.call(arguments).join(' ');
-          console.error(text);
-        },
         canvas: (function() {
           var canvas = document.getElementById('canvas');
           canvas.width = window.innerWidth; // Todo: how to do this from c++
